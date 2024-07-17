@@ -1,0 +1,24 @@
+
+clickhere
+POST http://localhost:3000/users/
+Content-Type:application/json
+
+{
+    "user_firstname":"mani",
+    "user_email":" mail@gmail.com ",
+    "user_phone":"9876543210",
+    "user_password":"123456",
+    "role":"admin"
+}
+
+POST http://localhost:3000/login/
+Content-Type:application/json
+
+{
+    "user_firstname":"mani",
+    "user_password":"123456"
+}
+
+
+GET http://localhost:3000/userdetails 
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2ZpcnN0bmFtZSI6Im1hbmkiLCJpYXQiOjE3MjExOTA2NTN9.-go59QW9yOdvGx1YhuJVO_iAWRsqbcl1-E5M7ur8tZE
